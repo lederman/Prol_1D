@@ -15,7 +15,7 @@ function test001()
     
     xx=linspace(-1,1,500);
     prolate_ids = [1:10];
-    [v] = prolate_1d_ev(prolate_dat, prolate_ids, xx);
+    [v,dv] = prolate_1d_ev(prolate_dat, prolate_ids, xx);
     
     figure; 
     plot(v(:,1:2:end));
@@ -24,6 +24,12 @@ function test001()
     plot(v(:,2:2:end));
     title('odd prolates')
     
+    figure; 
+    plot(dv(:,1:2:end));
+    title('derivative of even prolates')
+    figure; 
+    plot(dv(:,2:2:end));
+    title('derivative of odd prolates')
     
    
   

@@ -1,4 +1,4 @@
-function [v] = prolate_1d_ev(prolate_dat, prolate_ids, xx)
+function [v,dv] = prolate_1d_ev(prolate_dat, prolate_ids, xx)
 %
 % Evaluates the prolate functions.
 %
@@ -14,6 +14,6 @@ function [v] = prolate_1d_ev(prolate_dat, prolate_ids, xx)
 
     assert( prolate_dat.type == 1 )
     
-    v = prolate_LegeNorm_ex(prolate_dat.cfs(:,prolate_ids+1), xx) ;
+    [v,dv] = prolate_LegeNorm_ex(prolate_dat.cfs(:,prolate_ids+1), xx) ;
 
 end

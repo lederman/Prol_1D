@@ -41,15 +41,15 @@ function [prolate_dat, iserr] = prolate_1d_crea(c,matdim, minEigenvalRatio)
     % Combine
     % TODO: add error checking
     %
-    raw_chi=zeros(1,max(2*length(even_chi)-1,2*length(even_chi)) );
+    raw_chi=zeros(1,max(2*length(even_chi)-1,2*length(odd_chi)) );
     raw_chi(1:2:end) = even_chi;
     raw_chi(2:2:end) = odd_chi;
     
-    raw_lam=zeros(1,max(2*length(even_lam)-1,2*length(even_lam)) );
+    raw_lam=zeros(1,max(2*length(even_lam)-1,2*length(odd_lam)) );
     raw_lam(1:2:end) = even_lam;
     raw_lam(2:2:end) = odd_lam;    
     
-    raw_cfs_full = zeros( 2*matdim, max(2*length(even_lam)-1,2*length(even_lam)) );
+    raw_cfs_full = zeros( 2*matdim, max(2*length(even_lam)-1,2*length(odd_lam)) );
     raw_cfs_full(1:2:end , 1:2:end) = even_cfs;
     raw_cfs_full(2:2:end , 2:2:end) = odd_cfs;
     
