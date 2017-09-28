@@ -10,4 +10,5 @@ This implementation does not scale well at this point due to inefficient use of 
 * There are ways to exploit analytical results to make the eigendecomposition faster. 
 
 A more detailed discussion appears in the documentation of our "Prol" project.
+Although this is a preliminary example, if you experiment with this code and encounter scalibility issues either in run time or accuracy of small eigenvalues, please contact us for the scalable version. 
 
