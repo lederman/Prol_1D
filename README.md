@@ -1,2 +1,7 @@
-# prol_1D
-PSWFs (in development)
+# Prol_1D
+Prolate Spheroidal Wave Functions (PSWF)
+
+In development.
+
+Matlab version.
+
