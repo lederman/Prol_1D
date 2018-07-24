@@ -3,6 +3,8 @@ Prolate Spheroidal Wave Functions (PSWF)
 
 In development.
 
+**For the high dimensional version,** see [Prol](https://github.com/lederman/Prol/)
+
 Matlab version. 
 This implementation does not scale well at this point due to inefficient use of Matlab's eigendecomposition, which will be replaced in future versions: 
 * Matlab's eig takes full matrices (although it exploits the tridiagonal structure internally).
